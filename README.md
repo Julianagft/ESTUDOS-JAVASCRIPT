@@ -9,8 +9,10 @@ Link para o exercício: ![ex04-intervalos-numericos](https://github.com/Julianag
 ![Texto do Link](https://github.com/Julianagft/ESTUDOS-JAVASCRIPT/blob/main/digital-college/AULAS/fs-24%20(oficial)/Atividades/ex04-intervalos-numericos/intervalos.png)
 
 ## 2 Verificador de Números: 
-Outro exercício muito interessante de fazer usando apenas arrays, laços e condicionais; 
+Outro exercício muito interessante de fazer usando apenas arrays, laços e condicionais.
+
 Link para o exercício: ![ex03-analisador-de-valores](https://github.com/Julianagft/ESTUDOS-JAVASCRIPT/tree/main/digital-college/AULAS/fs-24%20(oficial)/Atividades/ex03-analisador-de-valores)
+
 ![Texto do Link](https://github.com/Julianagft/ESTUDOS-JAVASCRIPT/blob/main/digital-college/AULAS/fs-24%20(oficial)/Atividades/ex03-analisador-de-valores/analisador-de-valores.png)
 
 ## 3 Alguns exercícios com condicionais:
