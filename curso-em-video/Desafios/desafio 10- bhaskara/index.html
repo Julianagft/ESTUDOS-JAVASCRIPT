@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaskara</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            width: 250px;
+            height: 90px;
+            font-weight: bolder;
+            color: rgb(238, 240, 244);
+            background-color:#5B79A8;
+            border:3px solid #F1BA85;
+            box-shadow: 0.5rem 0.6rem .5rem rgb(208, 216, 219, 0.764);
+            border-radius: 20px;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resolvenddo Bhaskara</h1>
+    <button onclick="calculo()">Calcular</button>
+    <section id="retorno">
+        <p>Considerando uma equação no formato <strong>a</strong>x<sup>2</sup> + <strong>b</strong>x + c = 0, aperte o botão acima para calcular o valor de &#916.</p>
+    </section>
+
+    <script>
+        function calculo() {
+            let a = Number(window.prompt('Qual é o valor de a?'))
+            let b = Number(window.prompt('Qual é o valor de b?'))
+            let c = Number(window.prompt('Qual é o valor de c?'))
+            let bha = (b**2) - 4 * a * c 
+            let resultado = window.document.querySelector('#retorno');
+
+            resultado.innerHTML = `<h2>Resolvendo Bhaskara:</h2>
+                                <p>A equação atual é <strong>${a}x<sup>2</sup> + ${b}x + ${c} = 0</strong> </p>
+                                <p>O cálculo realizado será <strong>&#916 = ${b}<sup>2</sup> - 4 * ${a} * ${c}</strong></p>
+                                <p>O valor calculado foi <mark>&#916 = ${bha} </mark></p>`
+            }
+    </script>
+</body>
+</html>

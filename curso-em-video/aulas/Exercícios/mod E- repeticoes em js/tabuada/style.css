@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+
+body {
+    background-color: #048ABF;
+    font: normal 15pt Arial;
+}
+
+header {
+    font-weight: bold;
+}
+
+section {
+    background-color: aliceblue;
+    color:#ffa601;
+    border-radius: 10px;
+    padding: 15px;
+    width: 80vw;
+    margin: auto;
+    box-shadow: 5px 5px 20px rgba(89, 59, 2, 0.703);
+    position: relative;
+}
+
+input, a {
+    border: 1px solid #048ABF;
+    border-radius: 10px;
+}
+
+input, #seltab {
+    width: 150px;
+}
+
+a {
+    display: inline-block;
+    color:white;
+    background-color: #048ABF;
+    text-decoration: none; 
+    font-size: .9rem;
+    padding: 6px;
+    position: absolute;
+    transform: translate(17%, 3%);
+    
+}
+
+a:hover {
+    color: #ffa601;
+    background-color: white;
+    font-weight: bold;
+}
+
+header, footer {
+    color:#F2A20C;
+    text-align: center;
+}
+
+footer {
+    font-style: italic;
+    margin-top: 10px;
+    padding: 10px;
+}

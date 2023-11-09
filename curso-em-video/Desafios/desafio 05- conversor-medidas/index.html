@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Medidas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            width: 250px;
+            height: 90px;
+            color: white;
+            background-color: #D97925;
+            border:3px inset #D94B2B;
+            box-shadow: 0.5rem 0.6rem .5rem rgba(49, 46, 46, 0.764);
+            border-radius: 20px;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor de Medidas</h1>
+    <button onclick="conversor()">Converter</button>
+    <section id="resposta">
+        <p>Clique no botão acima para iniciar.</p>
+    </section>
+
+    <script>
+
+        /* function conversor(){
+            let m = Number(window.prompt('Digite uma distância em metros (m)'));
+            let medida = window.document.getElementById('resposta');
+            let km = m / 1000;
+            let hm = m / 100;
+            let Dam = m / 10;
+            let dc = m * 10;
+            let cm = m * 100;
+            let mm = m /0.001
+
+            medida.innerHTML = `<h1>A distância de ${m} metros, corresponde a...</h1>
+                                <p> ${km} quilômetros (Km)</p>
+                                <p> ${hm} hectômetros (Hm)</p>
+                                <p> ${Dam} decâmetros (Dam)</p>
+                                <p> ${dc} decímetros (dm)</p>
+                                <p> ${cm} centímetros (cm)</p>
+                                <p> ${mm} milímetros (mm)</p>`
+        } */
+
+        function converterMedidas(m) { //Fui eu que quis fazer assim, por que queria saber uma forma de guardar as variaveis caso precisasse novamente, mas tbm fiz de uma forma mais "fácil" (que eu pensei sozinha hehe) que deixei comentada logo acima;
+            let km = m / 1000;
+            let hm = m / 100;
+            let Dam = m / 10;
+            let dc = m * 10;
+            let cm = m * 100;
+            let mm = m /0.001;
+
+            return {
+                km,
+                hm,
+                Dam,
+                dc,
+                cm,
+                mm
+            }
+        }
+
+        function conversor() {
+            let m = Number(window.prompt('Digite uma distância em metros (m)'));
+            let medida = window.document.getElementById('resposta');
+            
+            let {km, hm, Dam, dc, cm, mm} =  converterMedidas(m);
+
+            medida.innerHTML = `<h1>A distância de ${m} metros, corresponde a...</h1>
+                                <p> ${km} quilômetros (Km)</p>
+                                <p> ${hm} hectômetros (Hm)</p>
+                                <p> ${Dam} decâmetros (Dam)</p>
+                                <p> ${dc} decímetros (dm)</p>
+                                <p> ${cm} centímetros (cm)</p>
+                                <p> ${mm} milímetros (mm)</p>`
+        }
+
+    </script>
+</body>
+</html>

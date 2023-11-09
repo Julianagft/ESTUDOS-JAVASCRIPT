@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arvore DEMO</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos DOM</h1>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <p>vamos lá...</p>
+    <div id="msg">Clique em mim</div> <br>
+
+    <script>
+        window.document.write('Olá Mundo! <br><br>')
+        window.document.write(window.navigator.appName,'<br><br>')
+        window.document.write(window.document.URL)
+
+        var p1 = window.document.getElementsByTagName('p')[0]; //Se eu quiser posso ocultar o window de window.document e usar apenas document;
+        // [0] pois quero apenas o primeiro paragrafo. Se quisesse o segundo seria [1] e assim por diante.
+        document.write('<br><br>')
+        document.write(p1.innerText)
+        p1.style.color= 'blue';
+        document.body.style.backgroundColor = 'lightgrey';
+        document.write(p1.innerHTML) //vai com a formatação
+        
+        var d = window.document.getElementById('msg');
+        d.style.background ='green' 
+
+    
+    </script> 
+</body>
+</html>

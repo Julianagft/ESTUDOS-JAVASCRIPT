@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS</title>
+    <style>
+        body { font: 12pt Arial; }
+        button { font-size: 12pt; padding: 30px; background-color: coral; }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com números</h1>
+    <button onclick="calcular()">Clique para calcular</button>
+    <section id="resposta">
+        <p>Resultado:</p>
+    </section>
+
+    <script>
+       function calcular(){
+        //A função Number() em JavaScript é usada para converter um valor em seu equivalente numérico. 
+        let n1 = Number(window.prompt('Digite um número:'))
+        let res= document.querySelector('#resposta')
+        resposta.innerHTML = `<p> O dobro de ${n1} é ${n1*2} e a metade de ${n1} é ${n1/2}!</p> `
+
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Monetário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            width: 250px;
+            height: 90px;
+            font-weight: bolder;
+            color: rgb(31, 30, 30);
+            background-color: #F25757;
+            border:3px solid #262626;
+            box-shadow: 0.5rem 0.6rem .5rem rgba(49, 46, 46, 0.764);
+            border-radius: 20px;
+            font-size: 1.3em;
+        }
+    </style>
+        
+</head>
+<body>
+    <h1>Conversor Monetário</h1>
+    <button onclick="conversor()">Converter</button>
+    <section id="retorno">
+        <p>Clique no botão acima para converter.</p>
+    </section>
+
+    <script>
+        let cot = Number(window.prompt('Olá. Quanto está a cotação do dólar agora?'));
+        
+        function conversor() {
+            let real = Number(window.prompt('Quantos R$ você tem na carteira?'))
+            let dolar = real/cot
+            let resposta = window.document.getElementById('retorno');
+
+            resposta.innerHTML = `<p>Com os <strong>R$${real}</strong> (reais) que você tem na carteira você poderá comprar o total de <mark><strong>$${dolar.toFixed(3)}</strong></mark> (dólares)!</p>` //com o toFixed(3) só vai mostrar até 3 casas decimais depois do ponto (.)
+        }
+
+    </script>
+</body>
+</html>

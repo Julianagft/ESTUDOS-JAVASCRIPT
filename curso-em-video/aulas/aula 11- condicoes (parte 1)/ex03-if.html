@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Multas (Condicionais)</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <input type="number" name="" id="txtvel">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+        
+
+        function calcular() {
+            var txtv = window.document.querySelector('#txtvel');
+            var res = window.document.querySelector('#res');
+            var vel = Number(txtv.value);
+            res.innerHTML =`<p>Sua velociadade atual é <strong>${vel}Km/h</strong></p>`;
+            
+            if (vel >= 60) {
+                res.innerHTML += `Você está acima da velocidade permitida. MULTADO!`
+            } else {
+                res.innerHTML += `<p>Você está dentro da velocidade permitida. Siga em frente! </p>`
+            }
+            
+            res.innerHTML += `<p>Dirija sempre com o cinto de segurança!</p>`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Valores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+            <h1>Analisador de Valores!</h1>
+        </header>
+
+        <section>
+            <div id="dados">
+                <p>Digite qualquer valor:
+                    <input type="number" name="number" id="num" min="0">
+                </p>
+                <p>
+                    <a onclick="adicionar()" href="#">Adicionar</a>
+                </p>
+            </div>
+
+            <div id="res">
+                <select name="lista" id="lista" size="6"><option value="">Digite uma altura acima...</option></select>
+                <p>
+                    <a onclick="finalizar()" href="#">Finalizar</a>
+                </p>
+            </div>
+
+            
+
+
+        </section>
+
+
+        <script src="analisador-de-valores.js"></script>
+    
+</body>
+</html>

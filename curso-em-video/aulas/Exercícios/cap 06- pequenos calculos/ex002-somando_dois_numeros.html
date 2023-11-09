@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS</title>
+    <style>
+        body { font: 12pt Arial; }
+        button { font-size: 12pt; padding: 30px; background-color: cornflowerblue; }
+    </style>
+</head>
+<body>
+    <h1>Somando dois números</h1>
+    <button onclick="calcular()">Clique para calcular</button>
+    <section id="resp">
+        <p>Resultado:</p>
+    </section>
+
+    <script>
+        function calcular(){
+            let n1 = Number(window.prompt('Digite um número:'))
+            let n2 = Number(window.prompt('Digite outro número:'))
+            let resp = document.querySelector('#resp') //O 'querySelector() permite que você selecione elementos usando seletores CSS, o que significa que você pode selecionar elementos não apenas por ID, mas também por classe, tipo de elemento, atributos, hierarquia, e assim por diante. Ele é mais versátil que o getElementById().
+            resp.innerHTML = `A soma de ${n1} e ${n2} é: ${n1+n2}!` 
+        }
+        
+    </script>
+</body>
+</html>

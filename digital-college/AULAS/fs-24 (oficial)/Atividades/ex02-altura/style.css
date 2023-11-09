@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color:#142F40 ;
+    background-color: #100126;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding-top: 70px;
+    width: 700px;
+    height: 500px;
+    background-color: #3A36BF;
+    border-radius: 10px;
+    box-shadow:0px 5px 15px rgba(41, 222, 242, 0.758);
+}
+
+div h1 {
+    text-transform: uppercase;
+    margin: 0 5px 30px 5px;
+    padding: 10px;
+    color:#100126;
+}
+
+div p {
+    color:#EBEBF2 ;
+    margin-top: 40px;
+}
+
+button {
+    width: 250px;
+    height: 90px;
+    font-weight: bolder;
+    color: #100126;
+    background-color: #29DEF2;
+    border:3px solid #100126;
+    border-radius: 20px;
+    font-size: 1.3em;
+}
+
+.mark__1 {
+    background-color: rgba(255, 0, 0, 0.584);
+    font-weight: bold;
+    color: #EBEBF2;
+}
+
+.mark__2 {
+    background-color:rgba(0, 128, 0, 0.5);
+    font-weight: bold;
+    color: #EBEBF2;
+}

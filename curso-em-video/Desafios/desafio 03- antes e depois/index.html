@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antes e Depois</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            width: 250px;
+            height: 90px;
+            background-color: salmon;
+            border: 3px solid purple;
+            border-radius: 20px;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Antes e Depois</h1>
+    <button onclick="numero()">Antecessor e Sucessor </button>
+
+    <script>
+        function numero() {
+            let num = Number(window.prompt('Digite um número: ')) 
+            window.alert(`Antes de ${num} temos o número ${num-1}.\nDepois de ${num} temos o número ${num+1}.`);
+        }
+
+        // (\n): Caractere de quebra de linha. 
+    </script>
+</body>
+</html>

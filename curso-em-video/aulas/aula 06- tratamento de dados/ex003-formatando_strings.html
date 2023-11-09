@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de Dados</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+            line-height: 50px;
+        }
+
+        .azul {
+            background-color: blue;
+        }
+
+        .coral {
+            background-color: coral;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <script>
+       var nome = window.prompt('Qual o seu nome?')
+        document.write(`Seu nome tem <mark>${nome.length}</mark> letras. <br>`) //o write escreve na tela (como se fosse um <p>);
+            document.write(`Seu nome em MAIÚSCULAS fica <mark class="azul">${nome.toUpperCase()}</mark> <br>`)
+            document.write(`Seu nome em minúsculas fica <mark class="coral">${nome.toLowerCase()}</mark>`)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto
+    </title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            width: 250px;
+            height: 90px;
+            font-weight: bolder;
+            color: rgb(31, 30, 30);
+            background-color: #F25757;
+            border:3px solid #262626;
+            box-shadow: 0.5rem 0.6rem .5rem rgba(49, 46, 46, 0.764);
+            border-radius: 20px;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desconto de 10%</h1>
+    <button onclick="calculo()">Calcular Desconto</button>
+    <section id="retorno">
+        <p>Clique no botão acima para iniciar.</p>
+    </section>
+
+    
+        
+    <script>
+        function calculo() {
+            let produto = window.prompt('Qual produto você está comprando?');
+            let preco = Number(window.prompt(`Qual o valor do produto ${produto}?`));
+            let desconto = Number((10/100)*preco);
+            let resposta= window.document.getElementById('retorno');
+
+            resposta.innerHTML =`<h1>Calculando desconto de 10% para ${produto}...</h1>
+                                <p>O preço original era ${preco}.</p>
+                                <p>Você acaba de ganhar R$${desconto.toFixed(2)} de desconto (-10%).</p>
+                                <p>O valor final é R$${preco-desconto}.</p>` }
+    </script>
+</body>
+</html>

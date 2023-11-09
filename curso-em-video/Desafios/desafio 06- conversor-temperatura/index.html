@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            width: 250px;
+            height: 90px;
+            font-weight: bolder;
+            color: rgb(31, 30, 30);
+            background-color: #027368;
+            border:3px inset #D94B2B;
+            box-shadow: 0.5rem 0.6rem .5rem rgba(49, 46, 46, 0.764);
+            border-radius: 20px;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor de Temperaturas</h1>
+    <button onclick="conversor()">Converter</button>
+    <section id="retorno">
+        <p>Clique no botão acima para iniciar.</p>
+    </section>
+    
+    <script>
+
+        function unidadeTemp(c) {
+            let k = c + 273.15;
+            let f = (c * 1.8) + 32;
+
+            return {
+                k,
+                f
+            }
+        }
+
+        function conversor() {
+            let c = Number(window.prompt('Digite uma temperatura em °C (Celsius)'));
+            let resposta = window.document.getElementById('retorno');
+            let {k,f} = unidadeTemp(c);
+            resposta.innerHTML = `<h1>A temperatura ${c}°C corresponde a...</h1>
+                                <p>${k}°K (Kelvin)</p>
+                                <p>${f}°F (Fahrenheit)</p>` };
+
+    </script>
+</body>
+</html>

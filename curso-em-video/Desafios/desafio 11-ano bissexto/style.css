@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color:#142F40 ;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding-top: 70px;
+    width: 700px;
+    height: 500px;
+    background-color: #114c70cc;
+}
+
+div h1 {
+    text-transform: uppercase;
+    color:#b90404;
+}
+
+div p {
+    color:#EBEBF2 ;
+}
+
+button {
+    width: 250px;
+    height: 90px;
+    font-weight: bolder;
+    color: #EBEBF2;
+    background-color: #D92938;
+    border:3px solid #D9B1A3;
+    border-radius: 20px;
+    font-size: 1.3em;
+}
+
+.mark__1 {
+    background-color: rgba(255, 0, 0, 0.584);
+    font-weight: bold;
+    color: #EBEBF2;
+}
+
+.mark__2 {
+    background-color:rgba(0, 128, 0, 0.5);
+    font-weight: bold;
+    color: #EBEBF2;
+}

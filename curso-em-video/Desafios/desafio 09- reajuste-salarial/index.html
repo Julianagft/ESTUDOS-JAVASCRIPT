@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajuste Salarial</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            width: 250px;
+            height: 90px;
+            font-weight: bolder;
+            color: white;
+            background-color: #d51111;
+            border:3px solid #191717;
+            box-shadow: 0.5rem 0.6rem .5rem rgba(49, 46, 46, 0.764);
+            border-radius: 20px;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reajuste Salarial</h1>
+    <button onclick="calculo()">Reajustar Salário</button>
+    <section id="retorno">
+        <p>Clique no botão acima para iniciar.</p>
+    </section>
+
+    
+
+    <script>
+        function calculo() {
+            let funcionario = window.prompt('Qual o nome do funcionário?');
+            let salario = Number(window.prompt(`Qual é o salário de  ${funcionario}? `));
+            let percentual = Number(window.prompt(`Qual a porcentagem (%) de reajuste do salário de ${funcionario}?`));
+            let reajuste = Number((percentual/100)*salario);
+            let retorno = window.document.querySelector('#retorno');
+
+            retorno.innerHTML = `<h1>Calculando reajuste salarial de ${funcionario}...</h1>
+                                <p>O salario receberá um aumento de ${percentual}%, equivalente a R$${reajuste} a mais a partir do próximo mês.</p>
+                                <p>O salário de ${funcionario} passará a ser R$${salario + reajuste}.</p>` 
+        }
+    </script>
+</body>
+</html>
