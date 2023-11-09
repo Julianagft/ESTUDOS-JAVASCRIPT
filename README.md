@@ -6,6 +6,6 @@ Fiquei particularmente orgulhosa desse exercício pois consegui resolver quase t
 
 Link para o exercício: [Texto do Link](digital-college/AULAS/fs-24 (oficial)/Atividades/ex04-intervalos-numericos)
 
-Link para o exercício: [Texto do Link](https://github.com/Julianagft/ESTUDOS-JAVASCRIPT/blob/main/digital-college/AULAS/fs-24%20(oficial)/Atividades/intervalos.png)
+[Texto do Link](https://github.com/Julianagft/ESTUDOS-JAVASCRIPT/blob/main/digital-college/AULAS/fs-24%20(oficial)/Atividades/intervalos.png)
 
 
