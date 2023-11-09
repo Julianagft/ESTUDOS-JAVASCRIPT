@@ -13,10 +13,25 @@ num.addEventListener('keydown', function (e) {
 
 
 function adicionar() {
+
     if (!listaLimpou) {
-       lista.innerHTML = ''; //para limpar a lista antes de adicinar o número; 
-       listaLimpou = true;
-    } //Neste código, a variável listaLimpou é usada para controlar se a lista já foi limpa. Na primeira chamada da função adicionar, a lista é limpa, e a variável listaLimpou é marcada como true. Nas chamadas subsequentes, a lista não será limpa novamente. Isso permite que a lista mantenha os valores anteriores após a primeira chamada.
+        lista.innerHTML = '';
+        listaLimpou = true;
+    }
+
+    const numValue = Number(num.value);
+
+    if (isNaN(numValue) || num.value.trim() === '') {
+        alert("Digite um valor válido.");
+        return;
+    }
+
+    if (Number(num.value) < 0) {
+        return finalizar();
+     } else if (Number(num.value) > 100) {
+         return alert("Valor maior que 100. Digite um valor entre 0 e 100.");
+     }
+
     
     valores.push(Number(num.value))
     let item = document.createElement('option');
@@ -33,40 +48,40 @@ function finalizar() {
 
     if (valores.length == 0) {
         alert('Adicione valores antes de finalizar!')
-    } else if (valores.length < 0) {
+    } else {
 
-    }
-    
-    else {
-
-       
-        let soma = 0;
+        let intervalo1 = 0;
+        let intervalo2 = 0;
+        let intervalo3 = 0;
+        let intervalo4 = 0;
 
         for (let i = 0; i < valores.length; i++) {
-            soma += valores[i];
-        }
+            if (valores [i] >= 0 && valores [i] <= 25) {
+                intervalo1++;
+            } else if(valores[i] >= 26 && valores[i] <= 50) {
+                intervalo2++;
+            } else if (valores[i] >= 51 && valores[i] <= 75) {
+                intervalo3++;
+            } else if (valores[i] >= 76 && valores[i] <= 100) {
+                intervalo4++;
+            }
+    }
 
-        const media = soma / valores.length;
-        const percentualPositivo = (positivos / valores.length) * 100;
-        const percentualNegativo = (negativos / valores.length) * 100;
+    res.innerHTML += `<p style="color: whitesmoke">Ao todo temos ${valores.length} valores cadastrados:</p>
+                            <p>Temos ${intervalo1} números no intervalo de [0-25];</p>
+                            <p>Temos ${intervalo2} números no intervalo de [26-50];</p>
+                            <p>Temos ${intervalo3} números no intervalo de [51-75];</p>
+                            <p>Temos ${intervalo4} números no intervalo de [76-100];</p>`;
 
-
+  }
         
-        res.innerHTML += `<p style="color: #2C4373">Ao todo temos ${valores.length} valores cadastrados:</p>
-        <p>A média aritmética dos valores é ${media.toFixed(2)}.</p>
-        <p>O maior valor informado foi ${Math.max(...valores)}.</p>
-        <p>O menor valor informado foi ${Math.min(...valores)}.</p>
-        <p>Foram informados ${positivos} valores positivos e ${negativos} negativos.</p>
-        <p>O percentual de valores positivos foi ${percentualPositivo.toFixed(2)}% e de valores negativos foi ${percentualNegativo.toFixed(2)}%</p>`
-        
-    }  
+}  
+
+function limpar() {
+    res.innerHTML = ``;
 }
 
-// valores.length = Para saber o total de elementos cadastrados
 
-// Math.max(...valores) =  Para saber qual o maior valor cadastrado. Os três pontos (...) antes de lista representam o operador de propagação (spread operator) em JavaScript. Essa sintaxe permite que você descomponha um array em seus elementos individuais, tornando-os argumentos separados para uma função.
-
-// Math.min(...valores) = Para saber qual o menor valor da lista;
 
 
 
