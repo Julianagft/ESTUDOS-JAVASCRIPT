@@ -17,7 +17,7 @@ notas.forEach(function (n, i, a) { //Ela vai ser chamada para cada elemento do a
 const media = somaNotas/notas.length
 console.log(`A média das notas é ${media}.`);
 
-//Parece o for of mas ele tem uma vantagem pois eu posso acrescentar um outro paâmetro para acessar o índice, caso eu deseje;
+//Parece o for of mas ele tem uma vantagem pois eu posso acrescentar um outro parâmetro para acessar o índice, caso eu deseje;
 
 // O forEach recebe uma função que tem o nome de callback e vai ser executada para cada elemento do array, sendo que pode receber de 1 a 3 argumentos; o elemento, o índice e o array atual, respectivamente
 
