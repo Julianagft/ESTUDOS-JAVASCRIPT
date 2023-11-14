@@ -1,0 +1,19 @@
+// ARRAY COM OBJETO;
+
+let carros = [];
+
+carros.push({
+    modelo: "Fusca",
+    preco: 6500
+});
+
+carros.push({
+    modelo:"Escort",
+    preco: 7800
+});
+
+carros.map((_,i)=> console.log(`${carros[i].modelo} R$: ${carros[i].preco}`))
+
+// for (let i = 0; i < carros.length; i++) {
+//     console.log(`${carros[i].modelo} R$: ${carros[i].preco}`);
+// }
