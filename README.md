@@ -25,3 +25,10 @@ Dois exercícios bem divertidos de fazer utilizando condicionais.
 - Verificador de Idade (Verifica a idade e o gênero e mostra uma imagem de acordo): ![verificador-de-idade](https://github.com/Julianagft/ESTUDOS-JAVASCRIPT/tree/main/curso-em-video/aulas/Exerc%C3%ADcios/mod%20D-%20condicoes%20em%20js/verificador-de-idade)
   
 ![hora-do-dia](https://github.com/Julianagft/ESTUDOS-JAVASCRIPT/blob/main/curso-em-video/aulas/Exerc%C3%ADcios/mod%20D-%20condicoes%20em%20js/verificador-de-idade/verificador-de-idade.png)
+
+## 4 Filtrando Dados Dentro de Uma Lista!
+Usando Objetos dentro de Arrays.
+
+Link para o exercício: ![Revendas Herbie](Livro-Logica de Programação e algoritmos com JS/cap 05- vetores/filtrando dados dentro de uma lista/revenda herbie)
+
+![Revendas-Herbie](https://github.com/Julianagft/ESTUDOS-JAVASCRIPT/blob/main/Livro-Logica%20de%20Programa%C3%A7%C3%A3o%20e%20algoritmos%20com%20JS/cap%2005-%20vetores/filtrando%20dados%20dentro%20de%20uma%20lista/revenda%20herbie/herbie01.png)  ![Revendas-Herbie02](https://github.com/Julianagft/ESTUDOS-JAVASCRIPT/blob/main/Livro-Logica%20de%20Programa%C3%A7%C3%A3o%20e%20algoritmos%20com%20JS/cap%2005-%20vetores/filtrando%20dados%20dentro%20de%20uma%20lista/revenda%20herbie/herbie02.png)
