@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initialscale=
+1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="estilos.css">
+<title>Exemplo 5.3</title>
+</head>
+<body>
+<main class="container">
+    <div class="esquerda"><img src="revenda-herbie.png" alt="Revenda Herbie" class="alta"></div>
+    <div class="direita">
+        <h1>Revenda Herbie</h1>
+        <div class="divisoria"></div>
+        <p>Modelo:
+        <input type="text" id="inModelo" autofocus> </p>
+        <p>Preço R$:
+        <input type="text" id="inPreco">
+        <button id="btAdicionar" onclick="adicionarCarros()">Adicionar</button>
+        <div><button onclick="listarCarros()">Listar Todos</button> <button onclick="filtrarCarros()">Filtrar Por Preço</button></div>
+        <pre id="outLista"></pre>
+    </div>
+</main>
+
+<script src="index.js"></script>
+</body>
