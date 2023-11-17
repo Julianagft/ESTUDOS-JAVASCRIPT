@@ -7,5 +7,5 @@ const cliente = {
     telefone:["1183838765", "11987675432"],
 };
 
-
+console.log(...cliente.telefone);
 
