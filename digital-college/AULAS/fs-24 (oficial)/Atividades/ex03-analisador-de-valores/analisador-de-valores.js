@@ -19,6 +19,11 @@ function adicionar() {
        lista.innerHTML = ''; //para limpar a lista antes de adicinar o número; 
        listaLimpou = true;
     } //Neste código, a variável listaLimpou é usada para controlar se a lista já foi limpa. Na primeira chamada da função adicionar, a lista é limpa, e a variável listaLimpou é marcada como true. Nas chamadas subsequentes, a lista não será limpa novamente. Isso permite que a lista mantenha os valores anteriores após a primeira chamada.
+
+    if (num.value.trim() === '') {
+        alert('Campo vazio! Por favor, adicione um valor a lista.');
+        return; // Retorna para interromper a execução da função
+    }
     
     valores.push(Number(num.value))
     let item = document.createElement('option');
