@@ -1,4 +1,4 @@
-// MÉTODOS DE OBJETO
+// OBJETCT.KEYS()
 
 const cliente = {
     nome: "Joao",
