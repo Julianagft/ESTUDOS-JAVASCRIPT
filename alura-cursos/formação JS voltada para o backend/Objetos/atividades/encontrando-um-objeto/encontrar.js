@@ -1,4 +1,4 @@
-const clientes = require("./cliente02.json");
+const clientes = require("./cliente.json");
 
 function encontrar(lista, chave, valor) {
     return lista.find((item) => item[chave].includes(valor));
