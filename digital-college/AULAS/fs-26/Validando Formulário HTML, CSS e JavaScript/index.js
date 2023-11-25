@@ -32,8 +32,8 @@ form.addEventListener('submit', (e) => {
 
         if (phone === '' ) {
         phoneError.textContent = 'Phone is required';
-        } else if (!/^\d+$/.test(phone) && (!(phone.toString()[2] === 9))) {
-            phoneError.textContent = 'Phone must contain only numbers and the 3º number must be 9';
+        } else if (!/^\d+$/.test(phone) || phone[2] !== "9" ) {
+            phoneError.textContent = 'Phone must contain only numbers, and the 3º number must be 9';
         } else {
         phoneError.textContent = '';
         }
