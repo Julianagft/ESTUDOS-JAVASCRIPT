@@ -9,7 +9,7 @@ function menorValor(arrProdutos, posicaoInicial) {
         }
     };
 
-    return maisBarato
+    return maisBarato  
 }
 
 
