@@ -28,8 +28,23 @@ function juntaListas(l1,l2) {
         atual++; //A lista atual sempre irá se movimentar idependente de termos mechido na l1 ou na l2;
     };
 
+    while (posicaoAtualL1 < l1.length) {
+        listaFinal[atual] = l1[posicaoAtualL1]
+        posicaoAtualL1++;
+        atual++;
+    }
+
+    while (posicaoAtualL2 < l2.length) {
+        listaFinal[atual] = l2[posicaoAtualL2]
+        posicaoAtualL2++;
+        atual++;
+    }
+
     return listaFinal
+
+    // A vantagem do while é que ele só sai do laço depois que ele tiver finalizado todo o processo. Enntão não corre o risco dele executar os trÊs laços ao mesmo tempo.
 
 }
 
-console.log(edGalho, edFolha);
+const listaCompleta = juntaListas(edGalho, edFolha);
+console.log(JSON.stringify(listaCompleta));
