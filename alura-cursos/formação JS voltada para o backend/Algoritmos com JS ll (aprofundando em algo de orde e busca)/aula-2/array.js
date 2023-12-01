@@ -45,4 +45,4 @@ const listaLivros = [
   },
 ]
 
-module.exports = listaLivros
+module.exports = listaLivros;

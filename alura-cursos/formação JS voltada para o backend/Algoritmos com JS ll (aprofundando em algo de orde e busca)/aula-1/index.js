@@ -1,3 +1,5 @@
+// MERGE SORT (PASSO A PASSO)
+
 const {edGalho, edFolha } = require('./arrays');
 
 function juntaListas(l1,l2) {
@@ -10,7 +12,7 @@ function juntaListas(l1,l2) {
     let atual = 0; // Essa é a variável que vai manejar em que posição o array final está no momento, também começando com 0.
 
     while (posicaoAtualL1 < l1.length && posicaoAtualL2 < l2.length) {
-        // As variáveis que eu chamei de posição atual cuidam só do índice, elas não têm o objeto que tem título e preço, que é o dado que queremos mudar de lugar ou não.
+        // As variáveis que eu chamei de posição atual cuidam só do índice, elas não têm o objeto que tem título e preço, que é o dado que queremos mudar de lugar ou não, por isso criamos as variaveis posicaoAtual.
 
         // Então criamos essa variável que eu estou chamando de “produtoAtual” de cada uma das listas, usando a notação do JavaScript, para acessar um valor num índice de um array, acessando o array l1 na posição que é relativa ao número, então a “posicaoAtualL1” começa com 0 e vai sendo percorrido.
         let produtoAtualL1 = l1[posicaoAtualL1];
@@ -46,5 +48,4 @@ function juntaListas(l1,l2) {
 
 }
 
-const listaCompleta = juntaListas(edGalho, edFolha);
-console.log(JSON.stringify(listaCompleta));
+console.log(juntaListas(edGalho, edFolha));
