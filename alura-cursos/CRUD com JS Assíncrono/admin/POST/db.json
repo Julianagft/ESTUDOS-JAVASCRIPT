@@ -1,0 +1,19 @@
+{
+  "profile": [
+    {
+      "nome": "felipe",
+      "email": "felipe@alura.com",
+      "id": 1
+    },
+    {
+      "nome": "Veronica Mars",
+      "email": "veronica_detetiveparticular@email.com",
+      "id": 3
+    },
+    {
+      "nome": "Naruto usumaki",
+      "email": "naruto_hokage@email.konoha",
+      "id": 5
+    }
+  ]
+}
