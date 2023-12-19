@@ -9,10 +9,11 @@ const criaNovaLinha = (nome, email, id) => {
         <td>${email}</td>
         <td>
             <ul class="tabela__botoes-controle">
-                <li><a href="../telas/edita_cliente.html" class="botao-simples botao-simples--editar">Editar</a></li>
+                <li><a href="../telas/edita_cliente.html?id=${id}" class="botao-simples botao-simples--editar">Editar</a></li>
                 <li><button class="botao-simples botao-simples--excluir" type="button">Excluir</button></li>
-            </ul>
+            </ul> 
         </td> `
+        // usei uma query string. Assim o id q identifica cada um dos clientes fica no final da url.
 
     linhaNovoCliente.innerHTML = conteudo;
 
