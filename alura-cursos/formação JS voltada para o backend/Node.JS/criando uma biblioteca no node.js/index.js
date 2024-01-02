@@ -13,7 +13,7 @@ function extraiLinks(texto) {
             // 1. Quando temos essa estrutura onde precisamos acessar um array e o índice desse array e queremos usar esse valor como chave de um objeto precisamos empacotá-los entre colchetes.
             // 2. No momento que abrimos chaves para criar o objeto e retorná-lo dentro da nossa função precisamos que o JS identifique que essas chaves não são chaves de função mas sim de objeto e para isso precisamos englobar todo o objeto que está sendo criado dentro de parêntesis; 
 
-            return resultados;
+    return resultados.length !== 0 ? resultados : 'não há links no arquivo!';
 }        
 
 function tratarErro(erro) {
@@ -25,15 +25,17 @@ async function pegaArquivo(caminhoArquivo) {
     try {
         const encoding = 'utf-8';
         const dados = await fs.promises.readFile(caminhoArquivo, encoding)
-        console.log(extraiLinks(dados));    
+        return extraiLinks(dados);    
     } catch(erro) {
         tratarErro(erro);
     }
     // TRADUÇÃO: pegaArquivo é um função asíncrona e precisamos esperar (await) o retorno de uma parte específica do códico, no caso é  
 }
-pegaArquivo('./arquivos/texto.md');
+
+export default pegaArquivo;
 
 // \[[^[\]]*?\] (capturando os colchetes e seu conteúdo)
 // \(https?:\/\/[^\s?#.].[^\s]*\) (capturando links e todos os seus caracteres)
 
 // JUNÇÃO DOS GRUPOS: \[([^[\]]*?)\]\((https?:\/\/[^\s?#.].[^\s]*)\)
+
