@@ -102,7 +102,7 @@ body {
 }
 
 i {
-    color: var(--textColor);
+    color: var(--primaryColor);
     font-size: 1.2rem;
     cursor: pointer;
 }
