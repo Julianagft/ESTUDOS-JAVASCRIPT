@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.ligth {
+.light {
     --bgColor:#ffff ;
     --primaryColor: #fecc02;
     --placeholderColor: rgba(0, 0, 0, 0.05);
@@ -44,7 +44,7 @@ body {
 }
 
 .calculo {
-    background-color: #ffffff;
+    background-color: var(--bgColor);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -105,4 +105,17 @@ i {
     color: var(--primaryColor);
     font-size: 1.2rem;
     cursor: pointer;
+}
+
+input {
+    background-color: transparent;
+    color: var(--textColor);
+}
+
+#iconHistoric {
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: black;
+
 }
