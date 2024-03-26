@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/global.css">
+    <title>Calculadora</title>
+</head>
+<body class="light">
+    <main class="container">
+        <div class="calculo eachRowItem">
+            <div id="buttonTheme" >
+                <div class="title">Simple Calculator</div>
+                <i id="icon" class="fa fa-moon"></i>
+            </div>
+            <input placeholder="calculo" id="inputCalc" />
+            <div>*press enter to find</div>
+        </div>
+        <div class="resultado eachRowItem">
+            <div>
+                <div id="buttonThemeHistoric">
+                    <i id="iconHistoric" class="fa fa-historic"></i>
+                </div>
+            </div>
+            <div class="resultText" id="resultCalc">0</div>
+            <div>→ view keyboard shortcuts</div>
+        </div>
+    </main>
+
+    <script src="src/scripts/init.js"></script>
+    <script src="./src/scripts/theme.js"></script>
+    <script src="./src/scripts/calc.js"></script>
+</body>
+</html>
+
+

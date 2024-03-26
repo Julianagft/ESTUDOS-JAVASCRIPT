@@ -1,0 +1,121 @@
+@import url("./imports.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.light {
+    --bgColor:#ffff ;
+    --primaryColor: #fecc02;
+    --placeholderColor: rgba(0, 0, 0, 0.05);
+    --textColor: #000;
+}
+
+.dark {
+    --bgColor:#121212 ;
+    --primaryColor: #fecc02;
+    --placeholderColor: rgba(255, 255, 255, 0.05);
+    --textColor: #ffff;
+}
+
+body {
+    background-color: #e8e8e8;
+    height: 100vh;
+    padding: 50px 73px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.calculo, .resultado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.calculo {
+    background-color: var(--bgColor);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.calculo>div:first-child {
+    display: flex ;
+    justify-content: space-between;
+    min-width: 100%;
+}
+
+.title {
+    color: var(--primaryColor);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.calculo>div:last-child {
+    color: var(--textColor);
+}
+
+.calculo>input {
+    border: none;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    max-width: 40vw
+}
+
+.calculo>input:focus {
+    outline: none;
+}
+
+.calculo>input::placeholder {
+    color: var(--placeholderColor);
+}
+
+.resultado {
+    background-color: #fecc02;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.resultText {
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.eachRowItem {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+i {
+    color: var(--primaryColor);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+input {
+    background-color: transparent;
+    color: var(--textColor);
+}
+
+#iconHistoric {
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: black;
+
+}
